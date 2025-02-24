@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Список задач</title>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="main">
+            <input type="text" class="enter_list">
+            <input type="button" value="Добавить задачу" class="add">
+            <input type="button" value="Очистить поле" class="del">
+            <div class="content">
+                
+            </div>
+            
+        </div>
+        <div class="footer_menu">
+            <ul class="menu">
+                <li><input type="button" value="Показать все" class="btn_all"></li>
+                <li><input type="button" value="Показать выполненые" class="btn_complete"></li>
+                <li><input type="button" value="Показать невыполненые" class="btn_nocomplete"></li>
+            </ul>
+        </div> 
+    </div>
     
 </body>
-</html>
+<script src="script.js"></script>
+</html> 

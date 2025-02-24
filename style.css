@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Стили для тела сайта */
+body{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* Стили для главного блока, где находится весь контент */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 25px 0;
+    position: relative;
+}
+/* Стили для поля ввода целей */
+input[type="text"]{
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;   
+}
+input[type="text"]:focus{
+    outline: none;
+}
+/* Стили для целей */
+p.item{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+input[type="button"]{
+    padding: 10px;
+    background: lightgray;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .5s;
+    
+}
+input[type="button"]:hover{
+    background-color: grey;
+    cursor: pointer;
+    transition: .5s;
+}
+.zapis{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.delete_zapis{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+}
+.delete_zapis:hover{
+    cursor: pointer;
+    
+}
+.complete{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: .2s;
+    position: absolute;
+    right: 50px;
+}
+.complete:hover{
+    background-color: green;
+    cursor: pointer;
+    transition: .2s;
+}
+.complete_elem{
+    text-decoration: line-through !important;
+    color: grey;
+}
+.hide{
+    display: none;
+}
+.nohide{
+    display: block;
+}
+.footer_menu{
+    position: fixed;
+    bottom: 10px;
+}
